@@ -19,14 +19,14 @@ ApplicationWindow {
 
             background: Rectangle {
                 id: pageBackground
-                color: 'green'
+                color: '#0072CE'
             }
 
             header: Rectangle {
                 id: header
                 height: parent.height / 5
                 width: parent.width
-                color: 'yellow'
+                color: '#FFFFFF'
 
                 Text {
                     id: headerText
@@ -51,7 +51,9 @@ ApplicationWindow {
                     Layout.minimumWidth: 10
                     height: greetingText.height
                     width: greetingText.width
-                    color: 'blue'
+                    color: '#00000000'
+                    border.width: 1
+                    border.color: '#FF000000'
                     Layout.topMargin: ((mainWindow.height - textContainer.height) * .3)
                     Layout.alignment: Qt.AlignCenter
 
@@ -71,7 +73,7 @@ ApplicationWindow {
                 id: footer
                 height: parent.height / 5
                 width: parent.width
-                color: 'red'
+                color: '#EF3340'
                 anchors {
                     bottom: parent.bottom
                     left: parent.left
